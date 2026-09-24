@@ -10,9 +10,9 @@ st.set_page_config(page_title="Order Nhà Hàng", layout="wide")
 # CONFIG DATABASE AIVEN MYSQL (ĐIỀN TRỰC TIẾP THÔNG TIN CỦA BẠN VÀO ĐÂY)
 # ==============================================================================
 DB_USER = "avnadmin" # Thay bằng tên tài khoản của Aiven
-DB_PASSWORD = " AVNS_TX2oBXmTGGjXba6p7j1" # thay password
-DB_HOST = " mysql-3a5ef2bc-binhquytoc.a.aivencloud.com" # thay host
-DB_PORT = " 14483 "  # Thay bằng Port thực tế của bạn
+DB_PASSWORD = "AVNS_TX2oBXmTGGjXba6p7j1" # thay password
+DB_HOST = "mysql-3a5ef2bc-binhquytoc.a.aivencloud.com" # thay host
+DB_PORT = "14483"  # Thay bằng Port thực tế của bạn
 DB_NAME = "defaultdb"
 
 # Chuỗi kết nối MySQL
