@@ -7,17 +7,20 @@ import streamlit as st
 st.set_page_config(page_title="Order Nhà Hàng", layout="wide")
 
 # ==============================================================================
-# CONFIG DATABASE AIVEN MYSQL (ĐÃ LÀM SẠCH KÝ TỰ ẨN)
 # ==============================================================================
+# CONFIG DATABASE AIVEN MYSQL
+# ==============================================================================
+
 DB_USER = "avnadmin"
 DB_PASSWORD = "AVNS_TX2oBXmTGGjXba6p7j1"
-DB_HOST = "mysql-3a5ef2bc-binhquytoc.a.aivencloud.com"
-DB_PORT = "14483"
+DB_HOST = "mysql-3a5ef2bc-binhquytoc.a.aivencloud.com".strip()
+DB_PORT = 14483
 DB_NAME = "defaultdb"
 
-# Chuỗi kết nối MySQL
-DATABASE_URL = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?ssl_verify_cert=true"
-
+DATABASE_URL = (
+    f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}"
+    f"@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+)
 
 @st.cache_resource
 def get_db_engine():
