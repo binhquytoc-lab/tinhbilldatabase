@@ -13,7 +13,7 @@ st.set_page_config(page_title="Order Nhà Hàng", layout="wide")
 
 DB_USER = "avnadmin"
 DB_PASSWORD = "AVNS_TX2oBXmTGGjXba6p7j1"
-DB_HOST = "mysql-3a5ef2bc-binhquytoc.a.aivencloud.com".strip()
+DB_HOST = "mysql-3a5ef2bc-binhquytoc.a.aivencloud.com"
 DB_PORT = 14483
 DB_NAME = "defaultdb"
 
